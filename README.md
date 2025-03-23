@@ -1,69 +1,117 @@
-# Welcome to your Lovable project
 
-## Project info
+# GitHub Metrics Explorer
 
-**URL**: https://lovable.dev/projects/64cb5589-9b2a-474c-8ecf-aa6cb2641e74
+![GitHub Metrics Explorer](https://img.shields.io/badge/Status-Active-brightgreen)
 
-## How can I edit this code?
+A powerful web application for visualizing and comparing GitHub repository metrics and analytics. Monitor views, clones, stars, and more across multiple repositories.
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- **Repository Comparison**: Select and compare up to 5 GitHub repositories simultaneously
+- **Comprehensive Analytics**: View stars, forks, traffic data, clones, and referring sites
+- **Interactive Charts**: Visualize metrics with responsive, interactive charts
+- **Secure Authentication**: Connect using your GitHub personal access token (no token storage on servers)
+- **User-Friendly Interface**: Clean, modern UI with responsive design
+- **Repository Search**: Find repositories by username or organization name
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/64cb5589-9b2a-474c-8ecf-aa6cb2641e74) and start prompting.
+## 🖥️ Screenshots
 
-Changes made via Lovable will be committed automatically to this repo.
+*Add screenshots of your application here*
 
-**Use your preferred IDE**
+## 🛠️ Technologies
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **React** - UI components and state management
+- **TypeScript** - Type-safe code
+- **Tailwind CSS** - Utility-first styling
+- **Shadcn UI** - Component library
+- **React Query** - Data fetching and caching
+- **Recharts** - Data visualization
+- **React Router** - Navigation
+- **GitHub API** - Repository data
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚦 Getting Started
 
-Follow these steps:
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- GitHub personal access token (with `repo` scope for private repositories)
+
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### GitHub Token
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This application requires a GitHub personal access token to access the GitHub API. To create one:
 
-**Use GitHub Codespaces**
+1. Go to [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
+2. Click "Generate new token"
+3. Select the `repo` scope (for accessing private repositories) or `public_repo` (for public only)
+4. Generate and copy the token
+5. Paste it into the application when prompted
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Note**: Your token is stored only in your browser's localStorage and is never sent to our servers.
 
-## What technologies are used for this project?
+## 📖 Usage
 
-This project is built with .
+1. **Authentication**: Enter your GitHub personal access token at the login screen
+2. **Repository Selection**: Enter a GitHub username or organization and select repositories
+3. **View Metrics**: Explore the various metrics available for each repository
+4. **Compare**: View side-by-side metrics for multiple repositories
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔒 Privacy
 
-## How can I deploy this project?
+This application:
+- Stores data only in your browser's localStorage
+- Makes requests directly to GitHub API
+- Does not collect or transmit your personal data or tokens
 
-Simply open [Lovable](https://lovable.dev/projects/64cb5589-9b2a-474c-8ecf-aa6cb2641e74) and click on Share -> Publish.
+## 🧪 Development
 
-## I want to use a custom domain - is that possible?
+### Available Scripts
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+
+### Project Structure
+
+```
+src/
+├── components/     # UI components
+├── services/       # API services
+├── hooks/          # Custom React hooks
+├── lib/            # Utility functions
+├── pages/          # Page components
+└── main.tsx        # Application entry point
+```
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check issues page.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- GitHub API for providing repository metrics
+- The open source community for amazing tools
+
+---
+
+Built with [Lovable](https://lovable.dev/projects/64cb5589-9b2a-474c-8ecf-aa6cb2641e74)
