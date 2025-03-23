@@ -66,7 +66,8 @@ export async function getRepositories(username: string, token: string): Promise<
       full_name: repo.full_name,
       description: repo.description,
       stars: repo.stargazers_count,
-      forks: repo.forks_count
+      forks: repo.forks_count,
+      updated_at: repo.updated_at
     }));
   } catch (error) {
     console.error('Error fetching repositories:', error);
