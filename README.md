@@ -16,7 +16,8 @@ A powerful web application for visualizing and comparing GitHub repository metri
 
 ## 🖥️ Screenshots
 
-*Add screenshots of your application here*
+![](https://i.imgur.com/7IoZcqt.jpeg)
+![](https://i.imgur.com/BOxg8YA.jpeg)
 
 ## 🛠️ Technologies
 
@@ -41,10 +42,10 @@ A powerful web application for visualizing and comparing GitHub repository metri
 
 ```sh
 # Clone the repository
-git clone <YOUR_GIT_URL>
+git clone https://github.com/garvit-exe/repo-metrics-compare.git
 
 # Navigate to the project directory
-cd <YOUR_PROJECT_NAME>
+cd repo-metrics-compare
 
 # Install dependencies
 npm install
@@ -57,11 +58,12 @@ npm run dev
 
 This application requires a GitHub personal access token to access the GitHub API. To create one:
 
-1. Go to [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
-2. Click "Generate new token"
-3. Select the `repo` scope (for accessing private repositories) or `public_repo` (for public only)
-4. Generate and copy the token
-5. Paste it into the application when prompted
+1. Go to [GitHub Settings > Developer settings > Personal access tokens > Fine-grained tokens](https://github.com/settings/personal-access-tokens/new)
+2. Select the `repo` scope (for accessing private repositories) or `public_repo` (for public only)
+   ![](https://i.imgur.com/w6qqb5C.jpeg)
+3. Generate and copy the token
+4. Paste it into the application when prompted
+
 
 **Note**: Your token is stored only in your browser's localStorage and is never sent to our servers.
 
@@ -111,7 +113,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - GitHub API for providing repository metrics
 - The open source community for amazing tools
-
----
-
-Built with [Lovable](https://lovable.dev/projects/64cb5589-9b2a-474c-8ecf-aa6cb2641e74)
